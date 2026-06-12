@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: postgres-file-upload-service
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: file_upload_db
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:8
+    container_name: redis-file-upload-service
+    ports:
+      - "6379:6379"

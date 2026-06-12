@@ -1,0 +1,15 @@
+venv/
+.env
+__pycache__/
+*.pyc
+uploads/
+**/__pycache__/
+*.py[cod]
+.env.*
+!.env.example
+# Ignore python cache files inside alembic
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# If you create a local-only alembic config file
+alembic.ini.local
