@@ -1,0 +1,39 @@
+# Python bytecode and environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Git
+.git
+.gitignore
+
+# Local databases and logs
+*.db
+*.sqlite3
+*.log
+
+# IDEs and OS metadata
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Testing and Linters
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+
+# Project Related
+uploads/
