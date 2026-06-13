@@ -19,3 +19,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run Ruff
         run: ruff check .
+      - name: Run Docker Build
+        run: docker build -t file-upload-service .
