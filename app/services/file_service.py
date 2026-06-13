@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from app.models.file import File as FileModel
 from app.constants.validations import ALLOWED_CONTENT_TYPES
 from app.services.storage_service import delete_file_from_storage, save_file_to_storage
+import os  # Add Ruff violation
 
 
 def get_file_record(id: UUID, db: Session):
