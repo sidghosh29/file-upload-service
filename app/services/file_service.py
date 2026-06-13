@@ -2,12 +2,8 @@ from uuid import UUID
 
 from fastapi import UploadFile, HTTPException
 from sqlalchemy.orm import Session
-from app.utils import generate_storage_filename
-from app.config import settings
-import os
-from pathlib import PurePosixPath
 from app.models.file import File as FileModel
-from app.constants.validations import MAX_FILE_SIZE, ALLOWED_CONTENT_TYPES
+from app.constants.validations import ALLOWED_CONTENT_TYPES
 from app.services.storage_service import delete_file_from_storage, save_file_to_storage
 
 
