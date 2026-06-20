@@ -21,3 +21,5 @@ jobs:
         run: ruff check .
       - name: Run Docker Build
         run: docker build -t file-upload-service .
+      - name: Run Tests
+        run: python -m pytest
