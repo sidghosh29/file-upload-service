@@ -34,7 +34,8 @@ async def save_file(file: UploadFile, db: Session):
         db.commit()
         db.refresh(file_record)
 
-    except Exception:
+    except Exception as e:
+        print(e)
         db.rollback()
         delete_file_from_storage(storage_info["logical_storage_filepath"])
 
